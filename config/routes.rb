@@ -1,3 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+    resources :articles
+  # get '/articles', to: 'articles#index'
+
+  # get '/article/:id', to: 'articles#show'
+
+  # get '/articles/new', to: 'articles#new'
+  # post '/articles', to: 'articles#create'
+
+  # get '/article/:id/edit', to: 'articles#edit'
+  # patch '/article/:id', to:'articles#update'
+
+  # delete 'article/:id', to: 'articles#destroy'
+
 end

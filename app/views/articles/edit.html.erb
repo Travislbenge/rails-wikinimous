@@ -1,0 +1,12 @@
+<h1>Edit an article</h1>
+<%= form_for @article do |f| %>
+  <%= f.label :title, value: 'Title' %>
+  <%=f.text_field :title %>
+  <br>
+  <%= f.label :content, value: 'Pokemon name' %>
+  <%= f.text_field :content %>
+  <br>
+  <%= f.submit %>
+  <br>
+  <%= link_to 'Backs to articles', articles_path %>
+<% end %>
